@@ -13,7 +13,7 @@ def location_handler(event, context):
     try:
         #os.environ["LD_LIBRARY_PATH"] = os.getcwd()+'/instantclient_12_2'
         print 'value of LD_LIBRARY_PATH' + os.environ['LD_LIBRARY_PATH']
-        con = cx_Oracle.connect('pawn01_lambda', 'T0mAt056_$#', 'PAWN01')
+        con = cx_Oracle.connect('xxxxx', 'xxxxx', 'xxxxx')
         cur = con.cursor()
     except (Exception, cx_Oracle.Error) as error:
         print error
